@@ -11,4 +11,11 @@ public class Message {
         this.receiver = receiver;
     }
 
+    public User getReceiver() {
+        return this.receiver;
+    }
+
+    public User getSender() {
+        return this.sender;
+    }
 }
