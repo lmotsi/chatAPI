@@ -14,5 +14,14 @@ public class User {
         return this.userName;
     }
 
+    public Boolean confirmPassWord(String enteredPassword) {
+        return enteredPassword.equals(this.passWord);
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (o.getClass() != this.getClass()) return false;
+        User otherUser = (User) o;
+        return otherUser.getUserName().equals(this.userName);
+    }
 
 }
